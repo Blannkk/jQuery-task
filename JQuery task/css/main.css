@@ -1,0 +1,264 @@
+:root {
+    --main-color: #272b30;
+    --color-text: #fff;
+    --second-color: #de2525;
+    --second-color-rgba: 255, 255, 255;
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", ;
+    min-height: 100%;
+    min-width: 100%;
+    /* color: var(--color-text); */
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    color: var(--color-text);
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* Adjusted for a better fit */
+    color: white;
+    position: relative;
+
+}
+
+.home-content {
+    z-index: 2;
+
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51, 0.6);
+    z-index: 1;
+}
+
+#openNav {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#openNav {
+    transition: transform 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+#mySidenav {
+    transition: width 0.3s;
+}
+
+/* #toggleButton {
+    z-index: 2;
+    position: relative;
+} */
+
+/* .sidenav {
+    width: 25%;
+    height: 100vh;
+} */
+
+.accordion-button {
+
+    display: block;
+    align-items: center;
+    background-color: #e68285;
+    text-align: center;
+    color: white;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-radius: 0px;
+}
+
+.accordion-body {
+    background-color: #cccccc;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #e68285;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+
+    box-shadow: none;
+}
+
+#count {
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+    height: 330px;
+}
+
+.countdown-container {
+    position: relative;
+    top: 50%;
+}
+
+.clock-item .inner {
+    height: 0px;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.clock-canvas {
+    background-color: rgba(250, 250, 250, .1);
+    border-radius: 50%;
+    height: 0px;
+    padding-bottom: 100%;
+}
+
+.text {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    width: 100%;
+}
+
+.text .val {
+    font-size: 50px;
+}
+
+.text .type-time {
+    font-size: 20px;
+}
+
+.contact-us .head h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-us .head p {
+    color: #777;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.contact-us .info h3 {
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-us .info p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #777;
+}
+
+.contact-us .info p.mail {
+    color: #bc1313;
+}
+
+.contact-us .info .socials i {
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact-us .info .socials i:hover {
+    color: #fff;
+    background-color: #D62E33;
+    border: 1px solid #D62E33;
+}
+
+.contact-us form input,
+.contact-us form textarea {
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.contact-us form button {
+    border-radius: 0;
+    text-transform: uppercase;
+}
